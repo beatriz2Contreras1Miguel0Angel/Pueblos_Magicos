@@ -16,12 +16,6 @@
             android:name=".Registro"
             android:exported="false" />
         <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".activity_login"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
