@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
     <color name="rosa">#E97DDE</color>
+    <color name="azul">#68BCEB</color>
+    <color name="naranja">#F29C4D</color>
+    <color name="gris">#B8B2B2</color>
+    <color name="morado">#B072E0</color>
     <color name="verde">#44BA42</color>
+
 </resources>
