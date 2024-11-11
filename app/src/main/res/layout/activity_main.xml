@@ -45,20 +45,22 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btiniciosesion"
             android:layout_width="295dp"
             android:layout_height="67dp"
             android:text="Iniciar Sesión"
             android:textSize="20sp"
+            android:backgroundTint="@color/morado"
             android:background="@drawable/foma_boton"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btregidtrar"
             android:layout_width="295dp"
             android:layout_height="67dp"
             android:text="Registar"
             android:layout_marginTop="16dp"
             android:textSize="20sp"
+            android:backgroundTint="@color/rosa"
             android:background="@drawable/foma_boton"/>
     </LinearLayout>
 

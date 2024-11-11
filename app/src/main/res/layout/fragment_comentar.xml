@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu_Fragment">
+    tools:context=".ComentarFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,50 +30,33 @@
 
                 <TextView
                     android:id="@+id/tv_titulo1"
-                    android:layout_width="160dp"
+                    android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Magia De"
+                    android:text="Atraviesa el puente colgante en Salto de Quetzalapan."
                     android:textStyle="bold"
-                    android:textSize="35sp" />
-                <TextView
-                    android:id="@+id/tv_titulo2"
-                    android:layout_width="111dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Puebla"
-                    android:textStyle="bold"
-                    android:textSize="35sp"
-                    android:gravity="center"/>
+                    android:textSize="23sp" />
+
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="145dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hola"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="¿Que te gustaria conocer?"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/puenteatlixco"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="320dp"
             android:orientation="vertical"
             android:gravity="center">
 
@@ -84,5 +66,21 @@
                 android:id="@+id/menupricipal"
                 android:layout_gravity="center"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="295dp"
+                android:layout_height="67dp"
+                android:text="Comentar"
+                android:textSize="20sp"
+                android:backgroundTint="@color/verde"
+                android:background="@drawable/foma_boton"/>
+        </LinearLayout>
     </LinearLayout>
+
 </FrameLayout>

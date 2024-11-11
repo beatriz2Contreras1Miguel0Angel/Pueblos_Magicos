@@ -91,6 +91,38 @@
             android:hint="Correo Electronico" />
 
         <TextView
+            android:layout_width="295dp"
+            android:layout_height="28dp"
+            android:text="Género:"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGenero"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro" />
+        </RadioGroup>
+
+        <TextView
             android:id="@+id/tv_contrasenia"
             android:layout_width="295dp"
             android:layout_height="28dp"
@@ -125,7 +157,8 @@
             android:text="Guardar"
             android:layout_marginTop="16dp"
             android:textSize="20sp"
-            android:background="@drawable/boton_registro"/>
+            android:backgroundTint="@color/verde"
+            android:background="@drawable/foma_boton"/>
 
     </LinearLayout>
 

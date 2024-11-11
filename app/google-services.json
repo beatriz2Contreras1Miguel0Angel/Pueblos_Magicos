@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068475101838",
+    "project_id": "pueblos-48be5",
+    "storage_bucket": "pueblos-48be5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068475101838:android:503eb2487f1b5fa4c74fdf",
+        "android_client_info": {
+          "package_name": "com.example.magiadepuebla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQA3X2dCEHQIxZMpPUALXuRwbipo78-v0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
