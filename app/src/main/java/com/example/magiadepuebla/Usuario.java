@@ -10,12 +10,12 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombre, String apellido, String correo, String genero, String contrasenia) {
+    public Usuario(String nombre, String apellido, String correo, String contrasenia, String genero) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
-        this.genero = genero;
         this.contrasenia = contrasenia;
+        this.genero = genero;
     }
 
     public String getNombre() {

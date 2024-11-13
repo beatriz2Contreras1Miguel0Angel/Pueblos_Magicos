@@ -15,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -23,6 +25,7 @@ public class Registro extends AppCompatActivity {
     private RadioGroup radioGenero;
     private Button bRegistrar;
     private DatabaseReference mDatabase;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,7 @@ public class Registro extends AppCompatActivity {
         bRegistrar= findViewById(R.id.b_registrar);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
 
         bRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,22 +67,32 @@ public class Registro extends AppCompatActivity {
         RadioButton selectedGenero = findViewById(selectedGeneroId);
         String genero = selectedGenero !=null ? selectedGenero.getText().toString(): "No Especificado";
 
-        Usuario usuario = new Usuario(nombre, apellidos, correo, contrasenia, confirmaContraseia);
+        mAuth.createUserWithEmailAndPassword(correo, contrasenia)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        FirebaseUser firebaseUser = mAuth.getCurrentUser();
 
-        String userId = mDatabase.push().getKey();
-        if(userId != null){
-            mDatabase.child("usuarios").child(userId).setValue(usuario).addOnCompleteListener(task -> {
-                if(task.isSuccessful()){
-                    Toast.makeText(Registro.this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
-                    abrirMenu();
-                }else{
-                    Toast.makeText(Registro.this, "Error Al Registar", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
+                        if (firebaseUser != null) {
+                            String userId = firebaseUser.getUid();
+                            Usuario usuario = new Usuario(nombre, apellidos, correo, contrasenia, genero);
+
+                            mDatabase.child("usuarios").child(userId).setValue(usuario)
+                                    .addOnCompleteListener(dbTask -> {
+                                        if (dbTask.isSuccessful()) {
+                                            Toast.makeText(Registro.this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
+                                            abrirMenu();
+                                        } else {
+                                            Toast.makeText(Registro.this, "Error al guardar en la base de datos", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                        }
+                    } else {
+                        Toast.makeText(Registro.this, "Error al registrar usuario: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
     private void abrirMenu(){
-        startActivity(new Intent(Registro.this, Menu_Fragment.class));
+        startActivity(new Intent(Registro.this, MenuActivity.class));
         finish();
     }
 }
