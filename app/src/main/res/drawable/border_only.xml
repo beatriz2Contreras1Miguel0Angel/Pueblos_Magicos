@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!-- Definición del contorno -->
+    <solid android:color="@android:color/transparent" /> <!-- Sin relleno -->
+    <stroke
+        android:width="8dp"
+        android:color="@color/azul" />
+    <corners android:radius="8dp" />
+</shape>

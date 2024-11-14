@@ -3,6 +3,8 @@ package com.example.magiadepuebla;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,66 +17,49 @@ import android.widget.Toast;
 public class Menu_Fragment extends Fragment {
 
     public Menu_Fragment() {
-        // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflar el layout del Fragment
-        View rootView = inflater.inflate(R.layout.fragment_menu_, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu_, container, false);
 
-        // Obtener el contenedor donde se agregarán los botones
-        LinearLayout botonContainer = rootView.findViewById(R.id.botonContainer);
-
-        // Crear y agregar 10 botones dinámicamente
-        for (int i = 1; i <= 10; i++) {
-            Button boton = new Button(getActivity());  // Usamos getActivity() para obtener el contexto
-
-            // Establecer el texto del botón
-            boton.setText("Botón " + i);
-
-            // Establecer la imagen del botón (diferente para cada uno)
-            switch (i) {
-                case 1:
-                    boton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.atlixco, 0, 0, 0);
-                    break;
-                case 2:
-                    boton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.chignahuapan, 0, 0, 0);
-                    break;
-                case 3:
-                    boton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.cholula, 0, 0, 0);
-                    break;
-                // Añadir más casos para otros botones con sus respectivas imágenes
-                default:
-                    boton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.atlixco, 0, 0, 0);
-                    break;
+        LinearLayout atlixto = view.findViewById(R.id.atlixto);
+        atlixto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirFragmento(new conoceratlixcoFragment());
             }
+        });
 
-            // Establecer un padding para separar la imagen del texto
-            boton.setCompoundDrawablePadding(16);  // Ajusta el valor del padding según tu necesidad
+        LinearLayout chignahuapan = view.findViewById(R.id.chignahuapan);
+        chignahuapan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirFragmento(new conocerChignahuapanFragment());
+            }
+        });
 
-            // Establecer el tamaño de los botones (opcional)
-            boton.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT
-            ));
+        LinearLayout cholula = view.findViewById(R.id.cholula);
+        cholula.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirFragmento(new conocerCholulaFragment());
+            }
+        });
 
-            // Agregar un OnClickListener para cada botón
-            int finalI = i;
-            boton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // Lógica al hacer clic en el botón
-                    Toast.makeText(getActivity(), "Botón " + finalI + " presionado", Toast.LENGTH_SHORT).show();
-                }
-            });
+        return view;
 
-            // Agregar el botón al contenedor
-            botonContainer.addView(boton);
-        }
-
-        return rootView;  // Devolvemos la vista inflada
     }
 
+    private void abrirFragmento(Fragment fragmentoDestino) {
+        FragmentManager fragmentManager = getParentFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, fragmentoDestino);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
 }
+
+
+
