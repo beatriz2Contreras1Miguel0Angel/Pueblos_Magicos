@@ -9,4 +9,17 @@
     <color name="morado">#B072E0</color>
     <color name="verde">#44BA42</color>
 
+    <color name="naranjabri">#FFC400</color>
+    <color name="verdetie">#8B9467</color>
+    <color name="verdeesm">#34A85A</color>
+    <color name="rosasu">#FF99CC</color>
+    <color name="verdeoli"> #3E8E41</color>
+    <color name="naranjacl">#FFA07A</color>
+    <color name="azulcie">#6495ED</color>
+    <color name="verdemet">#8BC34A</color>
+    <color name="rosapas">#FFC0CB</color>
+    <color name="verdelim">#4CAF50</color>
+    <color name="morasua">#6c5ce7</color>
+    <color name="naranjaint">#FF9800</color>
+
 </resources>

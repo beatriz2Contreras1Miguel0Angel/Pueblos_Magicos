@@ -85,41 +85,37 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/viveMagia3"
-                android:layout_width="298dp"
-                android:layout_height="220dp"
+                android:id="@+id/atlixto"
+                android:layout_width="280dp"
+                android:layout_height="90dp"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
-                android:background="@drawable/border_only"
-                android:padding="16dp"
-                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
                 android:clickable="true"
                 android:focusable="true">
 
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btatlixco"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
 
-                    <!-- El TextView para el texto largo -->
-                    <TextView
-                        android:id="@+id/btxvivemagia3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:lineSpacingExtra="4dp"
-                        android:padding="8dp"
-                        android:text="Su magia\n\nEste pueblo comparte su paisaje con un volcán, el Popocatépetl. No importa si se está en una terraza o en la punta del Cerro de San Miguel, el gigante siempre aparece a lo lejos con su nube de humo, y su presencia acompaña el vaivén de los días en este rincón poblano. No hay frío aquí, así que árboles frutales, plantas y flores crecen despreocupados. Los atlixquenses viven del comercio de esos regalos de la tierra, además tienen la costumbre de celebrar con floridos tapetes sus mayores fiestas."
-                        android:textAlignment="textStart"
-                        android:textColor="@color/negro"
-                        android:textSize="12sp" />
-                </ScrollView>
-
+                <TextView
+                    android:id="@+id/btaatlico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atlixco"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
             </LinearLayout>
 
-            <WebView
-                android:id="@+id/youtube_webview"
-                android:layout_width="298dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="8dp" />
         </LinearLayout>
     </LinearLayout>>
 

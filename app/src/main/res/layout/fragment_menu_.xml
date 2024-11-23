@@ -73,6 +73,11 @@
                 android:textSize="20sp" />
         </LinearLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -87,12 +92,12 @@
 
                 <LinearLayout
                     android:id="@+id/atlixto"
-                    android:layout_width="280dp"
-                    android:layout_height="90dp"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal"
                     android:background="@drawable/foma_boton"
-                    android:backgroundTint="@color/azul"
+                    android:backgroundTint="@color/naranjaint"
                     android:padding="10dp"
                     android:gravity=""
                     android:clickable="true"
@@ -119,12 +124,12 @@
 
                 <LinearLayout
                     android:id="@+id/chignahuapan"
-                    android:layout_width="280dp"
-                    android:layout_height="90dp"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal"
                     android:background="@drawable/foma_boton"
-                    android:backgroundTint="@color/verde"
+                    android:backgroundTint="@color/verdelim"
                     android:padding="8dp"
                     android:gravity=""
                     android:clickable="true"
@@ -151,12 +156,12 @@
 
                 <LinearLayout
                     android:id="@+id/cholula"
-                    android:layout_width="280dp"
-                    android:layout_height="90dp"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal"
                     android:background="@drawable/foma_boton"
-                    android:backgroundTint="@color/naranja"
+                    android:backgroundTint="@color/verdetie"
                     android:padding="8dp"
                     android:gravity=""
                     android:clickable="true"
@@ -181,7 +186,296 @@
                         android:textColor="@color/negro" />
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/cuetzalan"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/verdeesm"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/btcuetzalan"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cuetzalan"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxcuetzalan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cuetzalan"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/huauchinango"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/azulcie"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/bthuauchinango"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/huauchinango"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxhuauchinango"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Huauchinango"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/huejotzingo"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/naranjabri"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/bthuejotzingo"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/huejotzingo"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxhuejotzingo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Huejotzingo"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pahuatlan"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/rosasu"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/btpahuatlan"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/pahuatlan"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxpahuatlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pahuatlán"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tetela"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/bttetela"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/tetela"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxtetela"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tetela de Ocampo"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teziutlan"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/morasua"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/btteziutlan"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/teziutlan"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxteziutlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teziutlán"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tlatlauquitepec"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/verdeoli"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/bttlatlauquitepec"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/tlatlauquitepec"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxtlatlauquitepec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tlatlauquitepec"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/xicotepec"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/rosapas"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/btxicotepec"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/xicotepec"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxxicotepec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xicotepec"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zacatlan"
+                    android:layout_width="330dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/foma_boton"
+                    android:backgroundTint="@color/naranjacl"
+                    android:padding="8dp"
+                    android:gravity=""
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/btacatlan"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/zacatlan"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/btxzacatlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zacatlán de las Manzanas"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </FrameLayout>

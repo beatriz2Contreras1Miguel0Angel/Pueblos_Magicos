@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".AtractivoAtixcoFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,17 +47,175 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
 
+            <LinearLayout
+                android:id="@+id/atlixto"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/btatlixco"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/btaatlico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Antiguo Hospital De San Juan De Dios"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/atlixto1"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/btatlixco1"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/btaatlico1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camino entre flores en los viveros de Atlixco"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/atlixto2"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/btatlixco2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/btaatlico2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="capilla de la tercera orden puebla"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/atlixto3"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/btatlixco3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/btaatlico3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atlixco"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/atlixto4"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/foma_boton"
+                android:backgroundTint="@color/azul"
+                android:padding="10dp"
+                android:gravity=""
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/btatlixco4"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/atlixco"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/btaatlico4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atlixco"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
 
 
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </FrameLayout>
